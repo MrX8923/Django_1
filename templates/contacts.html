@@ -1,0 +1,69 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{% static 'img/k.png' %}">
+
+    <link rel="stylesheet" href="{% static 'normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <link rel="stylesheet" href="{% static 'all_styles.css' %}">
+
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+</head>
+<body>
+
+<header>
+        <h1 id="title">Контакты</h1>
+</header>
+
+<main>
+    <table>
+        <caption>Черноморское отделение</caption>
+
+        <thead>
+        <tr>
+            <th>Название</th>
+            <th>Данные</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>Адрес</td>
+            <td>г. Черноморск, наб. Кутузова, д. 5</td>
+        </tr>
+        <tr>
+            <td>Тел.</td>
+            <td>+7 (3052) 00-15-23</td>
+        </tr>
+        <tr>
+            <td>e-mail</td>
+            <td>client@hornscorp.ru</td>
+        </tr>
+        <tr>
+            <td>Телеграм</td>
+            <td>@Only_Horns</td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+
+<footer>
+    <nav>
+        <ul>
+            <li class="navigation_li"><a class="nav_link" href="{% url "home" %}">Главная</a>
+            <li class="navigation_li"><a class="nav_link" href="{% url "about" %}">О нас</a>
+            <li class="navigation_li"><a class="nav_link" href="{% url "contacts" %}">Контакты</a>
+            <li class="navigation_li"><a class="nav_link" href="{% url "month" ident=0 %}">Работник месяца</a>
+        </ul>
+    </nav>
+    <div id="copy_right">
+        <p>&copy; HORNS LTD, 2023</p>
+    </div>
+</footer>
+</body>
+</html>

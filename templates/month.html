@@ -1,0 +1,64 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>HORNS</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{% static 'img/k.png' %}">
+
+    <link rel="stylesheet" href="{% static 'normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <link rel="stylesheet" href="{% static 'all_styles.css' %}">
+
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+</head>
+<body>
+
+<header>
+    <h1 id="title">Работник месяца</h1>
+</header>
+
+<main>
+    <div class="card">
+        <div class="text_card">
+            <h2>{{ k1 }}</h2>
+            <h3>{{ k2 }}</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aut, blanditiis
+                consequatur cum debitis dicta dignissimos distinctio dolor doloribus ducimus fuga fugiat iure
+                laborum laudantium, libero modi necessitatibus odio, omnis porro quibusdam quod rerum saepe
+                tempora veniam vero vitae. A ad blanditiis dolorem error esse possimus repudiandae saepe vero?</p>
+        </div>
+        <div class="person_img">
+            <img  class="person" src="{% static k3 %}" alt="">
+        </div>
+    </div>
+    <ul>
+        <li class="product_li"><a class="nav_link" href="{% url "month" ident=0 %}">Март</a>
+        <li class="product_li"><a class="nav_link" href="{% url "month" ident=1 %}">Апрель</a>
+        <li class="product_li"><a class="nav_link" href="{% url "month" ident=2 %}">Май</a>
+    </ul>
+</main>
+
+<footer>
+    <nav>
+        <ul>
+            <li class="navigation_li"><a class="nav_link" href="{% url "home" %}">Главная</a>
+            <li class="navigation_li"><a class="nav_link" href="{% url "about" %}">О нас</a>
+            <li class="navigation_li"><a class="nav_link" href="{% url "contacts" %}">Контакты</a>
+            <li class="navigation_li"><a class="nav_link" href="{% url "month" ident=0 %}">Работник месяца</a>
+        </ul>
+    </nav>
+    <div id="copy_right">
+        <p>&copy; HORNS LTD, 2023</p>
+    </div>
+</footer>
+
+</body>
+
+</html>

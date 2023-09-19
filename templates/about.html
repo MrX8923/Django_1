@@ -1,0 +1,96 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WE</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="{% static 'img/k.png' %}">
+
+    <link rel="stylesheet" href="{% static 'normalize.css' %}">
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <link rel="stylesheet" href="{% static 'all_styles.css' %}">
+
+    <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+</head>
+
+<body>
+
+<header>
+        <h1 id="title">Наш персонал</h1>
+</header>
+
+<main>
+    <section>
+        <div class="card">
+            <div class="person_img">
+                <img  class="person" src="{% static "img/16026566.jpg" %}" alt="ФУНТ">
+            </div>
+            <div class="text_card">
+                <h3>Зицпредседатель Фунт</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda consequuntur dolore dolorum
+                    laboriosam minus quam reprehenderit sed sequi soluta. Alias esse expedita explicabo molestiae omnis
+                    perferendis quod repellat saepe? A alias aliquid aspernatur dolor eum ex laudantium modi non odio
+                    officia quae quia repellat repellendus sit suscipit ullam vel, vero.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="text_card">
+                <h3>Остап</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aut, blanditiis
+                    consequatur cum debitis dicta dignissimos distinctio dolor doloribus ducimus fuga fugiat iure
+                    laborum laudantium, libero modi necessitatibus odio, omnis porro quibusdam quod rerum saepe
+                    tempora veniam vero vitae. A ad blanditiis dolorem error esse possimus repudiandae saepe vero?</p>
+            </div>
+            <div class="person_img">
+                <img  class="person" src="{% static "img/fe943.jpg" %}" alt="ОСТАП">
+            </div>
+        </div>
+        <div class="card">
+            <div class="person_img">
+                <img  class="person" src="{% static "img/13187646.jpg" %}" alt="ФУНТ">
+            </div>
+            <div class="text_card">
+                <h3>Паниковский</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur at deserunt dolore dolores
+                    eligendi eveniet expedita explicabo facilis impedit, ipsum itaque laboriosam laudantium,
+                    libero natus nesciunt nulla perferendis placeat praesentium provident quam quisquam quos
+                    reprehenderit vitae? Aut dolorum explicabo molestias quo, quos sapiente!</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="text_card">
+                <h3>Шура</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto commodi cum
+                    exercitationem illo ipsa ipsam itaque, maxime quae rerum similique sint tempore totam
+                    velit voluptate. Cumque debitis delectus, distinctio dolor dolorem eos magnam minima nam nemo
+                    nihil numquam omnis pariatur, quibusdam recusandae sapiente velit veniam voluptatibus.</p>
+            </div>
+            <div class="person_img">
+                <img  class="person" src="{% static "img/207535.jpg" %}" alt="ОСТАП">
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <nav>
+        <ul>
+            <li class="navigation_li"><a class="nav_link" href="{% url "home" %}">Главная</a>
+            <li class="navigation_li"><a class="nav_link" href="{% url "about" %}">О нас</a>
+            <li class="navigation_li"><a class="nav_link" href="{% url "contacts" %}">Контакты</a>
+            <li class="navigation_li"><a class="nav_link" href="{% url "month" ident=0 %}">Работник месяца</a>
+        </ul>
+    </nav>
+    <div id="copy_right">
+        <p>&copy; HORNS LTD, 2023</p>
+    </div>
+</footer>
+
+</body>
+
+</html>

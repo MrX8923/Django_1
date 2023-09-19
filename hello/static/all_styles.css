@@ -1,0 +1,183 @@
+body {
+  font-family: "Century Gothic", "Times New Roman", sans-serif;
+  font-size: 1.2em;
+  color: red;
+  text-shadow: 2px 2px 4px black;
+  background-image: url("../static/img/bull-horn-logo.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  -webkit-background-size: 100%;
+}
+
+main {
+  margin-bottom: 200px;
+}
+
+#about {
+  background-color: black;
+}
+
+header {
+  display: flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -o-flex;
+  flex-direction: row;
+  margin: 3em auto;
+  padding: 0;
+  width: 50%;
+  min-width: 800px;
+}
+
+#title {
+  margin: 2% auto;
+  padding: 0.2%;
+  width: 50%;
+  text-align: center;
+  color: red;
+  border: red 5px double;
+  border-radius: 30px;
+  box-shadow: 5px 5px 10px black;
+}
+
+#logo {
+  margin: 2% auto;
+  padding: 0;
+  width: 650px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: 150px;
+  width: 100%;
+  background-color: black;
+}
+
+#copy_right {
+  margin: 0.1% auto;
+  width: 30%;
+  padding: 0;
+  text-align: center;
+}
+
+nav {
+  margin: 0.1% auto;
+  width: 100%;
+  padding: 0;
+  text-align: center;
+}
+
+.navigation_li {
+  display: inline-block;
+  margin: 3% auto;
+  padding: 1px 3%;
+}
+
+.nav_link {
+  color: red;
+  text-decoration: none;
+  transition: 1s linear;
+}
+
+.nav_link:hover {
+  color: white;
+  text-decoration: none;
+  transform: scaleX(1.015) scaleY(1.015);
+}
+
+.product_li {
+    display: inline-block;
+    margin: 3% 0.5%;
+    padding: 1px 3%;
+    background-color: black;
+    border: red double 3px;
+    border-radius: 30%;
+    box-shadow: 5px 5px 10px black;
+}
+
+.card {
+  margin: 1% 1%;
+  display: flex;
+  display: -ms-flex;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -o-flex;
+  flex-direction: row;
+}
+
+.person {
+    width: 400px;
+    border-radius: 30px;
+    border: black 3px solid;
+}
+
+.text_card {
+  margin: 0 2%;
+  padding: 0.4%;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+}
+
+table {
+    margin: 0 auto;
+    max-width: 90%;
+    border: none;
+    border-spacing: 0;
+    vertical-align: middle;
+    text-align: center;
+    font-family: "Century Gothic", "Times New Roman", sans-serif ;
+    font-size: 25px;
+}
+
+th {
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    margin: 0;
+    background-color: darkred;
+    font-weight: bold;
+}
+
+td {
+    width: 200px;
+    height: 50px;
+    padding: 10px;
+    margin: 0;
+}
+
+td:first-child {
+    background-color: rgba(255, 255, 255, 0.09);
+    font-weight: bold;
+    color: goldenrod;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(211, 211, 211, 0.2);
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+thead {
+    color: rgb(218, 165, 32);
+}
+
+caption {
+    font-size: 1em;
+    margin-top: 20px;
+    padding: 0.4%;
+    text-align: right;
+    caption-side: bottom;
+    color: red;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: red double 3px;
+    border-radius: 30px;
+}
